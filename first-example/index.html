@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Apply JavaScript example</title>
+    <script src="script.js" async></script>
+    <!-- 
+    	 internal and external examples the JavaScript is loaded and run in the head of the document, before the HTML body is parsed. This could cause an error, so we've used some constructs to get around it.
+    	 <script>
+    	 	document.addEventListener("DOMContentLoaded", function() {
+			  ...
+			});
+		also when we load the document using external examples the use of async does the same effect.
+		Loading the scripts in the body is not recomended as it slows down the site in big projects.
+
+		Difference between async and defer:
+
+		* async: better when we don't need an order for loading scripts.
+		* defer: instead this will load the scripts in the order they were added.
+		</script>
+	-->
+  </head>
+  <body>
+    <button>Click me</button>
+  </body>
+</html>
